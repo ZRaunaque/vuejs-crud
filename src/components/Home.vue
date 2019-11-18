@@ -22,13 +22,13 @@
 import tutorials from "@/data.js";
 import Table from "./Table.vue";
 import TutorialEdit from "./TutorialEdit.vue";
-// import TutorialDelete from "./TutorialDelete.vue";
+import TutorialDelete from "./TutorialDelete.vue";
 export default {
   name: "Home",
   components: {
     Table,
-    TutorialEdit
-    // TutorialDelete
+    TutorialEdit,
+    TutorialDelete
   },
   data() {
     return {
