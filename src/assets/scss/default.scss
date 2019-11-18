@@ -1,0 +1,30 @@
+body {
+  font-family: $primaryFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $black;
+}
+
+#app {
+  padding: 20px;
+}
+.Button {
+  border: solid thin rgba($grey, 0.9);
+  padding: 10px 15px;
+  background: 0;
+  color: $black;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  &.PrimaryButton {
+    background: #1d629e;
+    color: $white;
+  }
+  &.DangerButton {
+    background: #ce2727;
+    color: $white;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}

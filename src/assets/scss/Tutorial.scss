@@ -1,0 +1,75 @@
+.TopContainer {
+  display: flex;
+  justify-content: flex-end;
+  input {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+    &[type="search"] {
+      border: solid thin $grey;
+      outline: 0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  }
+}
+table.TutorialsTable {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  thead {
+    th {
+      text-align: left;
+      padding-bottom: 10px;
+    }
+    tr {
+      border-bottom: solid 2px rgba($grey, 0.5);
+    }
+  }
+  tbody {
+    tr {
+      &:not(:first-child) {
+        border-top: solid thin rgba($grey, 0.5);
+      }
+      td {
+        padding: 15px 0;
+        &:first-child {
+          font-size: 20px;
+        }
+        input[type="button"] {
+          border: 0;
+          padding: 5px 15px;
+          background: #9a9a00;
+          color: $white;
+          border-radius: 3px;
+          cursor: pointer;
+          &.Delete {
+            background: #ce2727;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.TutorialForm {
+  max-width: 500px;
+  .InputField {
+    margin-top: 30px;
+    input, textarea {
+      border: solid thin $grey;
+      outline: 0;
+      padding: 15px;
+      border-radius: 5px;
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  .FormButtons {
+    padding-top: 20px;
+    input[type="button"]:nth-child(2) {
+      margin-left: 20px;
+    }
+  }
+}
